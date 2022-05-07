@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/93cab00ee1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Karla:wght@400;800&display=swap" rel="stylesheet">
@@ -19,17 +20,23 @@
             <h1 class="heading">Generate a</h1>
             <h1 class="heading-green">random password</h1>
             <p class="sup-text">Never use an insecure password again.</p>
-            <button class="button">Generate passwords</button>
+            <button class="button" id="button-el"><i class="fa-solid fa-bolt-lightning"></i> Generate passwords</button>
+            <input id="passwordLength" type="text">
             <hr>
             <div class="passwords">
-                <div class="password">...</div>
-                <div class="password">...</div>
-                <div class="password">...</div>
-                <div class="password">...</div>
+                <div class="password" id="result"><i class="fas fa-ellipsis-h"></i></div>
+                <div class="password" id="result"><i class="fas fa-ellipsis-h"></i></div>
+                <div class="password" id="result"><i class="fas fa-ellipsis-h"></i></div>
+                <div class="password" id="result"><i class="fas fa-ellipsis-h"></i></div>
             </div>
         </div>
     </section>
-
+    <footer>
+        <p>
+            Created by stay0nly 
+            <a href="https://github.com/stay0nly/PasswordGenerator" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </p>
+    </footer>
 
     <script src="app.js"></script>
 </body>

@@ -25,7 +25,6 @@ section {
     background-color: #1F2937;
     width: 500px;
     height: 500px;
-    
 }
 
 .heading {
@@ -74,7 +73,26 @@ section {
     font-size: 15px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    cursor: pointer;
+}
 
+input {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #109b6d;
+}
+
+.fa-bolt-lightning {
+    margin-right: 10px;
 }
 
 hr {
@@ -98,4 +116,26 @@ hr {
     background: #273549;
     border-radius: 6px;
     text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+footer {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: #dbedf0;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.fa-github {
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+  color: #fff;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
