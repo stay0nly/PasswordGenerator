@@ -23,3 +23,19 @@ buttonEl.addEventListener('click', function () {
     }
 });
 
+
+password = document.querySelectorAll(".password");
+for (const passwords of password) {
+    passwords.onclick = function() {
+    document.execCommand("copy");
+  }
+
+  passwords.addEventListener("copy", function(event) {
+    event.preventDefault();
+    if (event.clipboardData) {
+      event.clipboardData.setData("text/plain", passwords.textContent);
+      console.log(event.clipboardData.getData("text"))
+      alert("Password copied to clipboard");
+    }
+  });
+}
